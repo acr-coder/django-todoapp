@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('https://django-todoapp.vercel.app/admin/', admin.site.urls),
-    path('https://django-todoapp.vercel.app/', include('base.urls')),
+    path('admin/', admin.site.urls),
+    path('', include('base.urls')),
 ]
